@@ -1,0 +1,55 @@
+body {
+  font-family: Lato, Roboto, Arial, sans-serif;
+}
+
+svg {
+  /* background-color: #ccc; */
+  /* padding: 10px; */
+}
+
+.discovery, .Discovery {
+
+  fill: skyblue;
+  stroke: cadetblue;
+  stroke-width: 2;
+}
+
+.development, .Development {
+  fill: orange;
+  stroke: darkorange;
+  stroke-width: 2;
+}
+
+.tablefont {
+  font-family: 'Calibri',sans-serif;
+  font-size: 0.8em;
+  text-align: left;
+  /* text-anchor: middle; */
+  alignment-baseline: middle;
+}
+
+.table-header {
+  font-family: 'Calibri',sans-serif;
+  font-size: 0.8em;
+  text-align: left;
+  /* text-anchor: middle; */
+  alignment-baseline: middle;
+  font-weight: bold;
+}
+
+
+.barfont {
+  font-family: 'Calibri',sans-serif;
+  font-size: 0.6em;
+  text-align: center;
+  text-anchor: middle;
+  alignment-baseline: middle;
+  inline-size: 50px;
+}
+
+.now {
+   stroke:rgb(255,0,0);
+   stroke-width:4;
+   stroke-dasharray": "10,10";
+   stroke-linecap: "round";
+}
