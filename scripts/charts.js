@@ -1,6 +1,7 @@
-// const dataset = [5, 10, 15, 20, 25];
-let dataset;
 
+let dataset; // global for datase
+
+// convert datatypes when importing new data
 function rowConverter(d) {
   return {
     ID: parseInt(d.ID),
@@ -25,26 +26,27 @@ d3.csv('data/planning.csv', rowConverter)
     console.log(error); // handle error
   })
 
+
 function generateVis() {
-  let w = 800;
-  let h = 500;
+  let w = 800; // widht of the svg area
+  let h = 500; // height of svg area
   let n = Math.max.apply(Math, dataset.map(function(o) {
     return o.Line;
-  }));
+  })); // number of lines (Lines are numbered in the file because gantt block are sometimes placed on the same line)
 
   const padding = 5; // between elements in table
-  const margin = 10; // around table
-  const wtrack = 150;
-  const wgroup = wtrack;
-  const htimeline = 75;
-  const hTabTitles = 40;
-  const wgantt = w - wtrack - wgroup - 2 * padding - 2 * margin;
-  const hgantt = h - htimeline - padding - 2 * margin - hTabTitles;
-  const hbar = parseInt((h - hTabTitles - htimeline - (n - 1) * padding) / n);
-  const rounded = 0.3 * hbar;
-  const textAdjust = 0;
+  const margin = 10; // margin round table (area around graph is also needed of strokewidth)
+  const wtrack = 150; // with of the track column
+  const wgroup = wtrack; // widht of the group column
+  const htimeline = 75; // height of the axis
+  const hTabTitles = 40; // height of the table header
+  const wgantt = w - wtrack - wgroup - 2 * padding - 2 * margin; // width of gantt chart
+  const hgantt = h - htimeline - padding - 2 * margin - hTabTitles; // height of gantt chart
+  const hbar = parseInt((h - hTabTitles - htimeline - (n - 1) * padding) / n); // height of the bars
+  const rounded = 0.3 * hbar; // rounded corners of bars
 
-  // Time scales
+
+  // Time scales & axis
   const startDate = new Date(Math.min.apply(Math, dataset.map(function(o) {
     return o.Start;
   })));
@@ -55,6 +57,7 @@ function generateVis() {
   var x = d3.scaleTime()
     .domain([startDate, endDate])
     .range([margin + wtrack + padding + wgroup + padding, w - margin])
+
 
 
   const x_axis = d3.axisBottom()
@@ -85,7 +88,8 @@ function generateVis() {
                  } )
 
 
-  const svg = d3.select("body") //niet
+  // Graphic elements
+  const svg = d3.select("body")
     .append("svg")
     .attr("width", w)
     .attr("height", h);
@@ -132,7 +136,7 @@ function generateVis() {
     .attr('y', (d, i) => (d.Line - 1) * (hbar + padding) + margin + hbar / 2 +  hTabTitles)
     // .attr('width', wgantt/2)
     .text(d => d.Title)
-    .attr('class', 'barfont')
+    .attr('class', 'bar-font')
 
 
   // Track Labels
@@ -142,7 +146,7 @@ function generateVis() {
     .data(dataset)
     .enter()
     .append('text')
-    .text(d => {
+    .text(d => { // Do not repeat labels
       if(tracks.indexOf(d.Track) < 0 ) {
         tracks.push(d.Track);
         return d.Track;
@@ -152,7 +156,7 @@ function generateVis() {
     })
     .attr('x', margin)
     .attr('y', (d, i) => (d.Line - 1) * (hbar + padding) + margin + (hbar / 2) +  hTabTitles)
-    .attr('class', 'tablefont')
+    .attr('class', 'table-font')
 
 
   let groups=[];
@@ -160,7 +164,7 @@ function generateVis() {
     .data(dataset)
     .enter()
     .append('text')
-    .text(d => {
+    .text(d => { // Do not repeat labels
       if(groups.indexOf(d.Group) < 0) {
         groups.push(d.Group);
         return d.Group;
@@ -170,8 +174,15 @@ function generateVis() {
     })
     .attr('x', wtrack + padding + margin)
     .attr('y', d => (d.Line - 1) * (hbar + padding) + margin + (hbar / 2) + hTabTitles)
-    .attr('class', 'tablefont')
+    .attr('class', 'table-font')
 
+
+    // horizontal axis
+    svg.append("g")
+      .attr("transform", "translate(0, " + (h-htimeline+margin+padding*2) + ")")
+      .call(x_axis)
+
+    // current date shown in verticl line
     const now = parseInt(x(new Date()));
 
     var lineGenerator = d3.line();
@@ -187,11 +198,5 @@ function generateVis() {
       .attr('class', 'now')
       .attr("stroke-dasharray","10,10")
       .attr("stroke-linecap", "round");
-
-  svg.append("g")
-    .attr("transform", "translate(0, " + (h-htimeline+margin+padding*2) + ")")
-    .call(x_axis)
-
-
 
 }

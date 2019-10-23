@@ -20,7 +20,7 @@ svg {
   stroke-width: 2;
 }
 
-.tablefont {
+.table-font {
   font-family: 'Calibri',sans-serif;
   font-size: 0.8em;
   text-align: left;
@@ -38,7 +38,7 @@ svg {
 }
 
 
-.barfont {
+.bar-font {
   font-family: 'Calibri',sans-serif;
   font-size: 0.6em;
   text-align: center;
@@ -50,6 +50,6 @@ svg {
 .now {
    stroke:rgb(255,0,0);
    stroke-width:4;
-   stroke-dasharray": "10,10";
-   stroke-linecap: "round";
+   /* stroke-dasharray": "10,10";
+   stroke-linecap: "round"; */
 }
