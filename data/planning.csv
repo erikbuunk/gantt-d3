@@ -1,23 +1,22 @@
 ID,Phase,Track,Title,Start,End,Line,Class,Group
-1,discovery,Stacklife,discovery,Oct-1-2019,Dec-31-2019,1,discovery,StackLife
-2,discovery,Stacklife,Agile Monkeys discovery,Oct-1-2019,Dec-31-2019,2,discovery,Agile Monkeys
-3,discovery,Stacklife,Gaps & overlaps,Oct-1-2019,Dec-31-2019,3,discovery,Gaps and Overlaps
-4,discovery,Stacklife,Integration goals,Oct-1-2019,Dec-31-2019,4,discovery,Integration Goals
-5,discovery,Stacklife,Use cases,Oct-1-2019,Nov-15-2019,5,discovery,Tools
-6,discovery,Stacklife,Identify tools,Nov-15-2019,Dec-31-2019,5,discovery,Tools
-7,implementation,Stacklife,implementation,Jan-1-2020,March-31-2020,1,development,StackLife
-8,implementation,Stacklife,Tool 1 discovery,Jan-1-2020,March-31-2020,5,discovery,Tools
-9,implementation,Stacklife,Further development,Apr-1-2020,Jun-30-2020,1,development,StackLife
-10,implementation,Stacklife,Tool 1 implementation,Apr-1-2020,Jun-30-2020,5,development,Tools
-11,development,Stacklife,Tool 2 discovery,Apr-1-2020,Jun-30-2020,6,discovery,Tools
-12,development,Stacklife,Tool 2 implementation,Jul-1-2020,Sep-30-2020,6,development,Tools
-13,discovery,Digitization,Content Workflow,Oct-1-2019,Dec-31-2019,7,discovery,Workflow
-14,development,Digitization,Corpus Builder,Oct-1-2019,Dec-31-2019,8,development,Tooling
-15,development,Digitization,Scan Courts and Cannons,Jan-1-2020,March-31-2020,7,development,Workflow
-16,development,Digitization,More Scanning,Apr-1-2020,Jun-30-2020,7,development,Workflow
-17,development,Digitization,Improvements,Jan-1-2020,March-31-2020,8,development,Tooling
-18,discovery,Sustainability,Maintenance Goals,Jan-1-2020,March-31-2020,9,discovery,Governance
-19,development,Sustainability,Implement Governance,Apr-1-2020,Jun-30-2020,9,development,Governance
-20,discovery,Community,Communication plan,Jan-1-2020,March-31-2020,10,discovery,Communication
-21,development,Community,Live Sharia Source 1.0,Apr-1-2020,Jun-30-2020,10,development,Communication
-22,development,Community,Start building community,Apr-1-2020,Jun-30-2020,11,development,Community
+1,discovery,Stacklife,Discovery,Oct-1-2019,Feb-28-2020,1,discovery,StackLife
+2,discovery,Stacklife,Discovery Phase,Nov-4-2019,Feb-28-2020,2,discovery,Agile Monkeys
+5,discovery,Stacklife,Use cases,Oct-1-2019,Nov-15-2019,3,discovery,Tools
+6,discovery,Stacklife,Identify tools,Nov-15-2019,Dec-31-2019,3,discovery,Tools
+7,implementation,Stacklife,Implementation,Mar-01-2020,Jun-30-2020,1,development,StackLife
+8,implementation,Stacklife,Tool 1 discovery,Jan-1-2020,March-31-2020,3,discovery,Tools
+9,implementation,Stacklife,Further development,Jun-30-2020,Sep-30-2020,1,development,StackLife
+10,implementation,Stacklife,Tool 1 implementation,Apr-1-2020,Jun-30-2020,3,development,Tools
+11,development,Stacklife,Tool 2 discovery,Apr-1-2020,Jun-30-2020,4,discovery,Tools
+12,development,Stacklife,Tool 2 implementation,Jul-1-2020,Sep-30-2020,4,development,Tools
+13,discovery,Digitization,Content Workflow,Oct-1-2019,Dec-31-2019,5,discovery,Workflow
+14,development,Digitization,Corpus Builder,Oct-1-2019,Dec-31-2019,6,development,Tooling
+15,development,Digitization,Scan Courts and Cannons,Jan-1-2020,March-31-2020,5,development,Workflow
+16,development,Digitization,More Scanning,Apr-1-2020,Jun-30-2020,5,development,Workflow
+17,development,Digitization,Improvements,Jan-1-2020,March-31-2020,6,development,Tooling
+18,discovery,Sustainability,Maintenance Goals,Jan-1-2020,March-31-2020,7,discovery,Governance
+19,development,Sustainability,Implement Governance,Apr-1-2020,Jun-30-2020,7,development,Governance
+20,discovery,Community,Communication plan,Jan-1-2020,March-31-2020,8,discovery,Communication
+21,development,Community,Live Sharia Source 1.0,Apr-1-2020,Jun-30-2020,8,development,Communication
+22,discovery,Stacklife,Proposal,Oct-1-2019,Nov-1-2019,2,discovery,Agile Monkeys
+3,development,Community,Start building community,Apr-1-2020,Jun-30-2020,9,development,Community
