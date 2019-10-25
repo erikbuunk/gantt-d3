@@ -6,10 +6,10 @@ This is is still a 0.1 version.
 
 ## TODOs
 - [ ] Show progress in bars
-- [ ] make size scalable when window is resized
+- [x] make size scalable when window is resized
 - [ ] SVG doesn't support text areas with automatic text wrapping
 - [ ] remove moment.js reference if it can be done in d3
-- [ ] make classes lower-case
+- [x] make classes lower-case
 - [ ] interaction (resize columns)
 - [ ] tooltips
 - [ ] move/change/add/delete data in browser, save back the csv

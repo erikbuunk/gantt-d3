@@ -116,6 +116,11 @@ function generateVis() {
 
 
   // Graphic elements
+  // remove all elements
+  d3.selectAll('svg').remove();
+  d3.select('body').append('svg');
+
+  
   const svg = d3.selectAll('svg')
     .attr("width", w)
     .attr("height", h);

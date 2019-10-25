@@ -6,22 +6,21 @@ body {
   /* background-color: aqua; */
 }
 
-.discovery, .Discovery {
-
+.discovery {
   fill: #4E79A7;
   stroke: white;
   stroke-width: 2;
   
 }
 
-.Discovery-text {
+.discovery-text {
   fill: white;
 }
 
-.Development-text {
+.development-text {
   fill: black;
 }
-.development, .Development {
+.development {
   fill: #F28E2B;
   stroke: white;
   stroke-width: 2;
