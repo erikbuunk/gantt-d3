@@ -18,7 +18,11 @@ This is is still a 0.1 version.
 - [ ] Think of definitions: Track, Group
 - [ ] Add latest tick
 - [ ] zoom out/in: weeks/months/Q's
-- [ ] New views: 
+- [ ] New views:
   - [ ] progress view (shows if certain item is on or ahead of schedule, started, not started, behind schedule)
   - [ ] Show progress in bars
 - [ ] move/change/add/delete data in browser, save back the csv
+
+
+# git repository
+https://github.com/thebuunkenator/gantt-d3.git
