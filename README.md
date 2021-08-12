@@ -4,7 +4,26 @@ Run on server so data can be read
 
 This is is still a 0.1 version.
 
+## Data
+
+```
+ID,Phase,Track,Title,Start,End,Line,Class,Group
+1,discovery,Stacklife,Discovery & POC,Oct-1-2019,Feb-29-2020,1,discovery,StackLife
+```
+
+Phase:
+
+Track: Label First Left column (duplicates are not shown)
+Goup: Label Second column (dupliates are not shown)
+Title: label in bar
+Line: row  to show the bar
+Class: Reference to CSS for style settings such as color etc.
+Phase: not used
+Start/End: in format MMM-D-YYYY (Mar-1-2020)
+
 ## TODOs
+
+
 - [x] make size scalable when window is resized
 - [x] make classes lower-case
 - [x] Axis labels show end of Quarter instead of start of Quarter.
